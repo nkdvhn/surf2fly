@@ -109,6 +109,27 @@
             text-align: center;
             margin-top: 40px;
         }
+        .kontakt-extra {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-logo {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.whatsapp-btn {
+    height: 80px;
+    max-width: 90vw;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .footer-logo,
+    .whatsapp-btn {
+        height: 60px;
+    }
     </style>
 </head>
 <body>
@@ -191,15 +212,18 @@
             WhatsApp: 015679 617921<br>
             E-Mail: <a href="mailto:surf2fly@mail.de">surf2fly@mail.de</a></p>
 
-<!-- WhatsApp Button -->
-<a aria-label="Chat on WhatsApp"
-    href="https://api.whatsapp.com/send/?phone=4915679617921&text&type=phone_number&app_absent=0"
-    target="_blank"
-    style="display: block; text-align: center; margin-top: 20px;">
-    <img alt="Chat on WhatsApp"
-        src="WhatsAppButtonGreenLarge.svg"
-        style="height: 80px; max-width: 90vw;" />
-</a>
+<!-- Logo + WhatsApp -->
+<div class="kontakt-extra">
+    <img src="surf2fly_logo.svg" alt="Surf2Fly Logo" class="footer-logo" />
+    
+    <a aria-label="Chat on WhatsApp"
+        href="https://api.whatsapp.com/send/?phone=4915679617921&text&type=phone_number&app_absent=0"
+        target="_blank">
+        <img alt="Chat on WhatsApp"
+            src="WhatsAppButtonGreenLarge.svg"
+            class="whatsapp-btn" />
+    </a>
+</div>
 
         </div>
     </div>
