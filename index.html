@@ -105,7 +105,7 @@
             margin-top: 40px;
             position: relative;
             min-height: 200px;
-            background-image: url('surf2fly_logo.svg');
+            background-image: url('surf2fly_logo-fail.svg');
             background-repeat: no-repeat;
             background-position: right bottom;
             background-size: 150px;
@@ -202,6 +202,11 @@
     </div>
 
     <div id="termin" class="content">
+        <h2>Ihr wollt ein tolles Erlebnis verschenken?</h2>
+        <p>Kein Problem, bestellt für eure Freunde oder Familie einfach einen Gutschein>/>
+          <a href="Gutschein.html" target="_blank" class="button">Weg zum Gutschein</a>  
+
+            
         <h2>Was erwartet mich genau?</h2>
         <p>Du kommst einfach zum vereinbarten Zeitpunkt zu unserem Treffpunkt am Main (Die Bootslipstelle zwischen Grafenrheinfeld und Bergrheinfeld https://maps.app.goo.gl/xN8HqcPdqKRmkYHa9)</p>
         <p>Unsere Coaches zeigen dir hier erstmal per Trockenübungen an Land, wie du mit dem eFoil umgehst.  
@@ -246,27 +251,8 @@
 
         <div style="margin-top: 30px;">
             <a href="Datenschutz.html" style="color: #333; text-decoration: underline;">Datenschutzerklärung</a>
+            <p style="font-size: 16px;"> "Wir verwenden Cookies – einige sind essenziell, andere helfen uns, die Website zu verbessern. Mit „Akzeptieren“ stimmen Sie der Nutzung aller Cookies zu. Unter [Datenschutz] oder in den [Einstellungen] können Sie Ihre Wahl anpassen." </p>
         </div>
     </footer>
-
-    <div id="cookie-banner" class="cookie-banner" style="display: none;">
-        Diese Website verwendet Cookies, um dir das beste Erlebnis zu bieten. 
-        <a href="Datenschutz.html" target="_blank">Mehr erfahren</a>
-        <button onclick="acceptCookies()">OK</button>
-    </div>
-
-    <script>
-        function acceptCookies() {
-            localStorage.setItem('cookiesAccepted', 'true');
-            document.getElementById('cookie-banner').style.display = 'none';
-        }
-
-        window.onload = function() {
-            if (!localStorage.getItem('cookiesAccepted')) {
-                document.getElementById('cookie-banner').style.display = 'block';
-            }
-        };
-    </script>
-
 </body>
 </html>
